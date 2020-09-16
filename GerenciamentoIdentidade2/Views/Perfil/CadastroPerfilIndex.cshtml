@@ -1,0 +1,46 @@
+﻿@model GerenciamentoIdentidade2.Models.PerfilVD
+@{
+    Layout = "~/Views/_Layout.cshtml";
+}
+<link rel="stylesheet" href="~/Content/bootstrap.min.css" />
+<script src="~/Scripts/jquery-3.3.1.min.js"></script>
+<script src="~/Scripts/bootstrap.min.js"></script>
+<body>
+    <div id="login">
+        <div class="container">
+            <div id="login-row" class="row justify-content-center align-items-center">
+                <div id="login-column" class="col-md-4">
+                    <div id="login-box" style="margin-top: 80px" class="col-md-12" style="border-radius:5% !important;">
+                        <form id="LoginForm" class="form">
+                            <div class="form-group">
+                                <label for="inputEmailLogin">Nome do perfil</label>
+                                <input name="inputEmailLogin" type="email" class="form-control" aria-describedby="emailHelp" placeholder="Ex: Gerente">
+                            </div>
+                            <ul class="list-group">
+                                @foreach (var item in Model.ListaModulos)
+                                {
+                                    <li class="list-group-item">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="check_@item.CodModulo">
+                                            <label class="custom-control-label" for="check_@item.CodModulo">@item.NomeModulo</label>
+                                        </div>
+                                    </li>
+                                }
+                            </ul>                  
+                            <br/><br />
+                            <div class="form-group">
+                                <button type="submit" value="submit" class="btn btn-success text-center" style="margin-left: 35%">Cadastrar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="~/Scripts/Login/Login.js"></script>
+<style>
+
+
+</style>

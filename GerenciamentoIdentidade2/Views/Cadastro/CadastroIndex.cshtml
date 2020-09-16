@@ -1,0 +1,61 @@
+﻿@Model
+@{
+    ViewBag.Title = "Index";
+}
+<div class="g-card" style="margin-top: 4%;">
+    @using (Html.BeginForm("CriarConta", "Cadastro", FormMethod.Post, new { style = "width: 65%;height: 60%;margin-left: 13%;margin-top: 5%;margin-bottom: 5%;" }))
+    {
+        <div class="conteudo-form">
+            <div class="form-group">
+                <span class="glyphicon glyphicon-menu-left" onclick="history.back(-1)"></span>
+            </div>
+            <div class="form-group">
+                <label for="inputNomeCadastro">Nome</label>
+                <input name="inputNomeCadastro" type="text" class="form-control" placeholder="Nome">
+            </div>
+            <div class="form-group">
+                <label for="inputEmailCadastro">Email</label>
+                <input name="inputEmailCadastro" type="email" class="form-control" aria-describedby="emailHelp" placeholder="E-mail">
+            </div>
+            <div class="form-group">
+                <label for="inputCpfCadastro">CPF</label>
+                <input name="inputCpfCadastro" type="text" class="form-control" placeholder="000.000.000-0">
+            </div>
+            <div class="form-group">
+                <label for="inputSenhaCadastro">Senha</label>
+                <input name="inputSenhaCadastro" type="password" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="inputConfirmacaoSenha">Confirmação de senha</label>
+                <input name="inputConfirmacaoSenha" type="password" class="form-control" />
+            </div>
+            <div class="form-group">
+                <button class="btn btn-success" style="margin-left: 26%">Criar conta</button>
+            </div>
+        </div>
+    }
+</div>
+
+<style>
+    .chkLabel {
+        margin-left: 4px;
+    }
+
+    .chkbox {
+        margin-left: 4px;
+    }
+
+    .conteudo-form {
+        margin-left: 5%;
+        width: 100%
+    }
+
+    .g-card {
+        border: 1.5px solid #c2bfb8;
+        border-radius: 5%;
+        width: 30%;
+        height: 30%;
+        margin-left: 33%;
+        border-width: thin;
+    }
+</style>

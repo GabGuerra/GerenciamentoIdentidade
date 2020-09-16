@@ -1,0 +1,44 @@
+﻿@using GerenciamentoIdentidade2.Models.Usuario
+@{
+    Layout = "~/Views/_Layout.cshtml";
+}
+
+@{var usuario = (UsuarioGerenciamentoVD)HttpContext.Current.Session["usuarioLogado"];}
+<script src="~/Scripts/Home/Home.js"></script>
+<div id="menuCards">
+    <div class="row">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title" align="center">Cadastrar usuário</h5>
+                <a href="#" class="btn btn-secondary">Go somewhere</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title" align="center">Cadastrar módulo</h5>
+                <a href="#" class="btn btn-secondary">Go somewhere</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title" align="center">Perfil</h5>
+                <a id="btnRedirecionarCadastroPerfil" onclick="RedirecionarCadastroPerfil()" class="btn btn-secondary">Cadastrar Perfil</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    #menuCards {
+        margin-top: 20% !important;
+        margin-left: 9% !important;
+    }
+
+    .card {
+        margin-left: 5% !important;
+    }
+
+        .card a {
+            margin-left: 20%
+        }
+</style>
