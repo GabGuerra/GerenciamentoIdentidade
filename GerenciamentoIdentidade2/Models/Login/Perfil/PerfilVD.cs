@@ -20,10 +20,7 @@ namespace GerenciamentoIdentidade2.Models
         public PerfilVD()
         {
             ListaModulos = new List<ModuloVD>();
-            ListaModulosPermitidos = new List<ModuloVD>();
-            ListaModulos.Add(new ModuloVD { CodModulo = 1, NomeModulo = "Atendimento" });
-            ListaModulos.Add(new ModuloVD { CodModulo = 2, NomeModulo = "Relatórios" });
-            ListaModulos.Add(new ModuloVD { CodModulo = 3, NomeModulo = "Segurança" });            
+            ListaModulosPermitidos = new List<ModuloVD>();            
 
         }
 

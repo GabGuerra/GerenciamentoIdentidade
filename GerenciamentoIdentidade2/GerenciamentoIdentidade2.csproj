@@ -167,6 +167,7 @@
     <Content Include="Scripts\jquery-3.3.1.slim.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
     <Content Include="Scripts\Login\Login.js" />
+    <Content Include="Scripts\Modulo\Modulo.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -174,14 +175,19 @@
     <Compile Include="Business\CadastroBL.cs" />
     <Compile Include="Business\FuncionarioBL.cs" />
     <Compile Include="Business\LoginBL.cs" />
+    <Compile Include="Business\Modulo\ModuloBL.cs" />
+    <Compile Include="Business\Perfil\CadastroPerfilBL.cs" />
     <Compile Include="Controllers\CadastroController.cs" />
     <Compile Include="Controllers\FuncionarioController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\Modulo\ModuloController.cs" />
     <Compile Include="Controllers\Perfil\PerfilController.cs" />
     <Compile Include="DataAcess\CadastroDAO.cs" />
+    <Compile Include="DataAcess\Modulo\ModuloDAO.cs" />
     <Compile Include="DataAcess\Conexao.cs" />
     <Compile Include="DataAcess\FuncionarioDAO.cs" />
     <Compile Include="DataAcess\LoginDAO.cs" />
+    <Compile Include="DataAcess\Perfil\CadastroPerfilDAO.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -205,6 +211,7 @@
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
     <Content Include="Views\Perfil\CadastroPerfilIndex.cshtml" />
+    <Content Include="Views\Modulo\CadastroModuloIndex.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

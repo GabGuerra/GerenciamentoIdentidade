@@ -1,4 +1,5 @@
-﻿using GerenciamentoIdentidade2.Models;
+﻿using GerenciamentoIdentidade2.Business.Perfil;
+using GerenciamentoIdentidade2.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,7 @@ namespace GerenciamentoIdentidade2.Controllers
     {
         public ActionResult CadastroPerfilIndex() 
         {
-            return View("CadastroPerfilIndex", new PerfilVD());
+            return View("CadastroPerfilIndex", new CadastroPerfilBL().CadastroPerfilIndex());
         } 
     }
 }
